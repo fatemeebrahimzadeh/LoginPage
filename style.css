@@ -69,7 +69,6 @@ body {
     font-family: "Lato", sans-serif;
     width: 100vw;
     height: 100vh;
-    overflow-y: hidden;
     overflow-x: hidden;
     background-color: var(--primary);
     color: white;
@@ -105,6 +104,9 @@ body {
     padding: 1rem;
     max-width: 100%;
     background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container .image-container img {
