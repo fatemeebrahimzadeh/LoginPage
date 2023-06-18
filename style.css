@@ -204,6 +204,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 1rem;
     margin: 0.5rem;
 }
 
@@ -251,5 +252,12 @@ body {
 
     .container .content form .button-container .button {
         padding: 0.75rem;
+    }
+}
+
+@media (min-width:1024px){
+    .container .content .login-shortcut{
+        display: flex;
+        gap: 1rem;
     }
 }
