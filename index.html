@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="header">
+        <img src="./image/codivinity-Fw.png" alt="codivinity-logo" />
+        <span>Codivinity</span>
+      </h1>
+      <div class="image-container">
+        <img src="./image/travel.svg" alt="travel" />
+      </div>
+      <main class="content">
+        <p>Artificial Intelligence giving you travel recommendations</p>
+        <p>Welcome Back, Please login to your account</p>
+        <form onsubmit="onSubmitHanler()">
+          <label for="email">Email</label>
+          <input
+            name="email"
+            type="text"
+            placeholder="codivinity2023s@gmail.com"
+          />
+          <label for="password">Password</label>
+          <input name="password" type="password" />
+          <div class="remember-container">
+            <label class="remember-checkbox" for="remember">
+              <input name="remember" type="checkbox" />
+              Remember me
+            </label>
+            <a href="#">Forgot password?</a>
+          </div>
+          <div class="button-container">
+            <button class="button active">Login</button>
+            <button class="button">Sign Up</button>
+          </div>
+        </form>
+        <div class="login-shortcut">
+          <span>Or, login with</span>
+          <div>
+            <a href="#">Facebook</a>
+            <a href="#">Linked In</a>
+            <a href="#">Google</a>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
