@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script
+      src="https://kit.fontawesome.com/1a4dd4a998.js"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +19,7 @@
     <title>Login Page</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container login-popup">
       <h1 class="header">
         <div class="image"></div>
         <span>Codivinity</span>
@@ -23,9 +28,9 @@
         <img src="./image/travel.svg" alt="travel" />
       </div>
       <main class="content">
-        <p>Artificial Intelligence giving you travel recommendations</p>
+        <p>Code Smarter, Create Better</p>
         <p>Welcome Back, Please login to your account</p>
-        <form onsubmit="onSubmitHanler()">
+        <form onsubmit="onSubmitHanler(event)">
           <label for="email">Email</label>
           <input
             name="email"
@@ -42,8 +47,8 @@
             <a href="#">Forgot password?</a>
           </div>
           <div class="button-container">
-            <button class="button active">Login</button>
-            <button class="button">Sign Up</button>
+            <button type="submit" class="button">Login</button>
+            <button class="button signup-button">Sign Up</button>
           </div>
         </form>
         <div class="login-shortcut">
@@ -56,5 +61,50 @@
         </div>
       </main>
     </div>
+    <div class="container signup-popup hidden">
+      <h1 class="header">
+        <div class="image"></div>
+        <span>Codivinity</span>
+      </h1>
+      <div class="image-container">
+        <img src="./image/travel.svg" alt="travel" />
+      </div>
+      <main class="content">
+        <p>Code Smarter, Create Better</p>
+        <p>Welcome Back, Please login to your account</p>
+        <form onsubmit="onSubmitHanler(event)">
+          <label for="email">Email</label>
+          <input
+            name="email"
+            type="text"
+            placeholder="codivinity2023s@gmail.com"
+          />
+          <label for="password">Password</label>
+          <input name="password" type="password" />
+          <label for="retype-password">Confirm Password</label>
+          <input name="retype-password" type="password" />
+          <div class="remember-container">
+            <label class="remember-checkbox" for="remember">
+              <input name="remember" type="checkbox" />
+              Remember me
+            </label>
+            <a href="#">Forgot password?</a>
+          </div>
+          <div class="button-container">
+            <button class="button login-button">Login</button>
+            <button type="submit" class="button">Sign Up</button>
+          </div>
+        </form>
+        <div class="login-shortcut">
+          <span>Or, login with</span>
+          <div>
+            <a href="#">Facebook</a>
+            <a href="#">Linked In</a>
+            <a href="#">Google</a>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
